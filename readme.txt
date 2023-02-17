@@ -13,9 +13,9 @@
 
 	sql/dbcreate-mysql.sql
 
-3. Создать пользователя с именем testuser, паролем testpass и дать ему все права на базу данных st4db:
+3. Создать пользователя с именем user, паролем userpass и дать ему все права на базу данных st4db:
 
-	grant all privileges on st4db.* to testuser@'%' identified by 'testpass';	
+	grant all privileges on st4db.* to user@'%' identified by 'userpass';	
 	
 (выполнить в административной консоли MySQL)
 
