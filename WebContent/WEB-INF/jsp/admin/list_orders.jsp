@@ -4,7 +4,7 @@
 
 <html>
 
-<c:set var="title" value="Error" scope="page" />
+<c:set var="title" value="List of Orders" scope="page" />
 <%@ include file="/WEB-INF/jspf/head.jspf"%>
 
 <body>
@@ -18,7 +18,8 @@
 					<c:when test="${fn:length(userOrderBeanList) == 0}">No such orders</c:when>
 
 					<c:otherwise>
-						<form action="">
+						<form action="controller">
+							<input type="hidden" name="command" value="confirm">
 							<table id="list_order_table">
 								<thead>
 									<tr>
@@ -38,12 +39,13 @@
 										<td>${bean.orderBill}</td>
 										<td>${bean.statusName}</td>
 										<td>
-											<input type="checkbox">
+											<input type="checkbox" name="checkedOrders" value = "${bean.id}">
 										</td>
 									</tr>
 
 								</c:forEach>
 							</table>
+							<input type="submit" value="confirm">
 						</form>
 					</c:otherwise>
 				</c:choose> <%-- CONTENT --%>

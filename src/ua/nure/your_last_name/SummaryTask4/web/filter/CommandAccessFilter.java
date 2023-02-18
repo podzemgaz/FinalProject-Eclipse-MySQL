@@ -64,6 +64,7 @@ public class CommandAccessFilter implements Filter {
 			HttpServletRequest httpRequest = (HttpServletRequest) request;
 
 		String commandName = request.getParameter("command");
+		LOG.trace("Command name: " + commandName);
 		if (commandName == null || commandName.isEmpty()) {
 			return false;
 		}
@@ -78,6 +79,7 @@ public class CommandAccessFilter implements Filter {
 		}
 		
 		Role userRole = (Role)session.getAttribute("userRole");
+		LOG.trace("User Role: " + userRole);
 		if (userRole == null) {
 			return false;
 		}

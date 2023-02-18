@@ -9,7 +9,7 @@ package ua.nure.your_last_name.SummaryTask4.exception;
 public class Messages {
 
 	private Messages() {
-		// no op
+		// cannot make an instance from another class
 	}
 	
 	public static final String ERR_CANNOT_OBTAIN_USER_ORDER_BEANS = "Cannot obtain user order beans";

@@ -14,8 +14,6 @@ import ua.nure.your_last_name.SummaryTask4.db.entity.Entity;
 public class UserOrderBean extends Entity {
 	
 	private static final long serialVersionUID = -5654982557199337483L;
-
-	private long orderId;
 	
 	private String userFirstName;
 
@@ -24,14 +22,6 @@ public class UserOrderBean extends Entity {
 	private int orderBill;
 	
 	private String statusName;
-
-	public long getOrderId() {
-		return orderId;
-	}
-
-	public void setOrderId(long orderId) {
-		this.orderId = orderId;
-	}
 
 	public String getUserFirstName() {
 		return userFirstName;
@@ -67,7 +57,7 @@ public class UserOrderBean extends Entity {
 
 	@Override
 	public String toString() {
-		return "OrderUserBean [orderId=" + orderId + ", userFirstName="
+		return "OrderUserBean [orderId=" + getId() + ", userFirstName="
 				+ userFirstName + ", userLastName=" + userLastName
 				+ ", orderBill=" + orderBill + ", statusName=" + statusName
 				+ "]";

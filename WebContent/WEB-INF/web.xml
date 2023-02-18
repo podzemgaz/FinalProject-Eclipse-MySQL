@@ -61,7 +61,7 @@
 		<filter-class>ua.nure.your_last_name.SummaryTask4.web.filter.CommandAccessFilter</filter-class>
 		<init-param>
 			<param-name>admin</param-name>
-			<param-value>listOrders</param-value>
+			<param-value>listOrders confirm</param-value>
 		</init-param>
 		<init-param>
 			<param-name>client</param-name>

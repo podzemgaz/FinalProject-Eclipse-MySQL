@@ -28,6 +28,7 @@ public class CommandContainer {
 		commands.put("listMenu", new ListMenuCommand());
 		
 		// admin commands
+		commands.put("confirm", new ConfirmCommand());
 		commands.put("listOrders", new ListOrdersCommand());
 		
 		LOG.debug("Command container was successfully initialized");
